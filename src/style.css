@@ -18,6 +18,10 @@ body {
   background-color: #fff;
 }
 
+.container {
+  margin: 0;
+}
+
 /* !button start*/
 button {
   font-family: 'Lato', sans-serif;
@@ -68,7 +72,7 @@ button {
 
 /* !button end*/
 
-@media (min-width: 1026px) and (max-width: 1442px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .container {
     margin: 0 6rem;
   }
@@ -77,20 +81,20 @@ button {
   }
 
 }
-@media (min-width: 772px) and (max-width: 1026px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .container {
     margin: 0 4rem;
   }
 
 }
-@media (min-width: 426px) and (max-width: 772px) {
+@media (min-width: 425px) and (max-width: 768px) {
   .container {
     margin: 0 3rem;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 425px) {
   .container {
-    margin: 0;
+    margin: 0 2rem;
   }
   p {
     font-size: 1rem;
