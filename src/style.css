@@ -15,6 +15,7 @@ html {
   height: -webkit-fill-available;
 }
 body {
+  display: flex;
   background-color: var(--background);
   height: -webkit-fill-available;
 }
