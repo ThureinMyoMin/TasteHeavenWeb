@@ -14,6 +14,7 @@ p {
 
 body {
   background-color: var(--background);
+  height: -webkit-fill-available;
 }
 .container {
   width: auto;
