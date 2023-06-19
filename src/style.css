@@ -217,6 +217,7 @@ header .container {
 .home-img > img {
   max-width: 70%;
   max-height: 70%;
+  animation: scaleAnimation 3s ease-in-out infinite;
 }
 p {
   text-align: justify;
@@ -610,5 +611,19 @@ button {
   .nav_bar .nav_lists .active li > a:hover {
     color: var(--orange);
     font-size: 1.7rem;
+  }
+}
+/* !animations */
+@keyframes scaleAnimation {
+  0% {
+    transform: rotate(-5deg);
+
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+
   }
 }
