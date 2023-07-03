@@ -88,6 +88,7 @@
   position: relative;
   transition: 0.3s;
 }
+
 .morelogos .logo::before {
   content: "";
   position: absolute;
@@ -187,6 +188,13 @@
 .infos i:hover {
   color: var(--orange);
   border-color: var(--orange);
+}
+.morelogos .logo i {
+  color: white;
+  transition: .3s;
+}
+.morelogos .logo:hover i {
+  color: var(--orange)
 }
 /* !contact end */
 
