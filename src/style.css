@@ -179,6 +179,7 @@ header .container {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  height: 100vh;
   min-height: 100%;
 }
 .homesec::before {
@@ -496,6 +497,7 @@ text-transform: uppercase;
   display: flex;
   flex-direction: column;
   gap: .7rem;
+  transition: .3s;
 }
 .infos > div {
   display: flex;
@@ -512,6 +514,7 @@ text-transform: uppercase;
   border: 2px solid white;
   border-radius: 50%;
   font-size: 1rem;
+  transition: .3s;
 }
 .logos {
   display: flex;
@@ -532,6 +535,7 @@ text-transform: uppercase;
   justify-content: center;
   align-items: center;
   position: relative;
+  transition: .3s;
 }
 .morelogos .logo::before {
   content: "";
@@ -542,6 +546,7 @@ text-transform: uppercase;
   height: 100%;
   outline: 2px solid white;
   transform: rotate(45deg);
+  transition: .3s;
 }
 .contwo {
   width: 30%;
@@ -589,7 +594,7 @@ text-transform: uppercase;
 }
 .inputbox label {
   position: absolute;
-  left: 0;
+  left: 3px;
   transition: .3s;
   z-index: 0;
 }
@@ -613,11 +618,26 @@ text-transform: uppercase;
   transition: .1s;
   font-size: 1rem;
 }
+.inputbox textarea {
+  overflow: scroll;
+  height: 5rem;
+}
 .submit:hover {
   background-color: #fe9452;
 }
 .submit:active {
   background-color: #e05600;
+}
+.morelogos .logo:hover::before {
+  outline-color: var(--orange);
+}
+.logo:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+.infos i:hover {
+  color: var(--orange);
+  border-color: var(--orange);
 }
 /* !contact end */
 /* !button start*/

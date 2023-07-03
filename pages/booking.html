@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste Heaven | Booking</title>
+    <link rel="stylesheet" href="./pagessrc/booking.css" />
+    <link rel="icon" type="image/svg" href="../img/logo.svg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./pagessrc/contact.css" />
+  </head>
+
+  <body>
+    <section class="bookingsec">
+      <div class="container">
+        <div class="booking">
+          <div class="block">
+            <h1>book now</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              porro.
+            </p>
+            <div class="book">
+              <form action="" id="myform">
+                <div class="name">
+                  <label for="name">Your full name</label>
+                  <input type="text" id="name" required />
+                </div>
+                <div class="email">
+                  <label for="email">Your email address</label>
+                  <input type="email" id="email" required />
+                </div>
+                <div class="amount">
+                  <label for="amount">People</label>
+                  <select name="amount" id="amount" required>
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                    <option value="5">5 people</option>
+                    <option value="6-8">6-8 people</option>
+                    <option value="m*"">8< people</option>
+                  </select>
+                </div>
+                <div class="time">
+                  <label for="time">Time</label>
+                  <input type="time" id="time" required />
+                </div>
+                <div class="date">
+                  <label for="date">Date</label>
+                  <input type="date" id="date" required />
+                </div>
+                <div class="phno">
+                  <label for="phno">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="photo"
+                    placeholder="+959-123-456-789"
+                    required
+                  />
+                </div>
+                <div class="btn">
+                <input type="submit" class="submit" onclick="submitForm()">
+                <a href="../index.html">back to home</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./pagessrc/booking.js"></script>
+  </body>
+</html>

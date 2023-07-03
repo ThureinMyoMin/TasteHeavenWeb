@@ -1,0 +1,286 @@
+::-webkit-scrollbar {
+  display: block;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --orange: #ff7925;
+  --background: #1b1926;
+}
+
+/* !contact start */
+.contactsec {
+  width: 100vw;
+}
+.contactsec .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  width: 100%;
+  background-color: var(--background);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.conone {
+  width: 70%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.conone h2 {
+  font-size: 1.8rem;
+}
+.conone .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  transition: 0.3s;
+}
+.infos > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.infos i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.logos .morelogos {
+  display: flex;
+  gap: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+.morelogos .logo {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.3s;
+}
+.morelogos .logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 2px solid white;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+.contwo {
+  width: 30%;
+  height: 100%;
+  background-color: #252431;
+  padding: 3rem;
+}
+.contwo * {
+  color: white;
+}
+.contwo .inputparent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.inputparent > h2 {
+  width: 100%;
+  color: var(--orange);
+  color: white;
+  text-align: center;
+}
+.inputbox {
+  position: relative;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+}
+.inputbox input,
+.inputbox textarea {
+  padding: 0.3rem;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  outline: 0;
+  background-color: transparent;
+  width: 13rem;
+  resize: none;
+  height: 1.4rem;
+  font-size: 1rem;
+  z-index: 2;
+}
+.inputbox textarea {
+  height: 5rem;
+}
+.inputbox label {
+  position: absolute;
+  left: 3px;
+  transition: 0.3s;
+  z-index: 0;
+}
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label,
+.inputbox textarea:focus ~ label,
+.inputbox textarea:valid ~ label {
+  font-size: 12px;
+  transform: translateY(-1rem);
+  color: var(--orange);
+  /* color: white; */
+}
+.inputparent .submit {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: var(--orange);
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: white;
+  border: 2px solid rgb(212, 138, 0);
+  transition: 0.1s;
+  font-size: 1rem;
+}
+.submit:hover {
+  background-color: #fe9452;
+}
+.submit:active {
+  background-color: #e05600;
+}
+.morelogos .logo:hover::before {
+  outline-color: var(--orange);
+}
+.logo:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+.infos i:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+/* !contact end */
+
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+  .contwo {
+    padding: 1rem;
+  }
+  .contwo .inputparent {
+    justify-content: center;
+    align-items: center;
+  }
+  .contwo h2 {
+    font-size: 1.6rem;
+  }
+  .contwo * {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 769px) {
+  .contactsec {
+    padding-top: 5rem;
+  }
+  .contact .contwo {
+    padding: 2rem;
+  }
+  .conone {
+    width: 60%;
+  }
+  .contact .contwo {
+    padding: 1rem;
+    width: 40%;
+  }
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+  .contact * {
+    font-size: 1rem;
+  }
+  .contwo .inputparent {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .contactsec {
+    padding-top: 3rem;
+    height: auto;
+  }
+  .contacesec .conone h2,
+  .contacesec .contwo h2 {
+    font-size: 1rem;
+  }
+  .contact {
+    margin: 2rem 0;
+    height: auto;
+    flex-direction: column;
+  }
+  .conone {
+    order: 2;
+    width: 100%;
+  }
+  .contwo {
+    order: 1;
+    width: 100%;
+  }
+  .contwo > .inputparent {
+    justify-content: center;
+    align-items: center;
+  }
+  .contwo > .inputparent input,
+  .contwo > .inputparent textarea {
+    width: 70vw;
+  }
+  .review-block {
+    margin-left: 2px solid black !important;
+    margin-right: 2px solid black !important;
+  }
+  .review:first-child {
+    border-left: 0;
+  }
+  .review:last-child {
+    border-right: 0;
+  }
+  .review-block {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  .contwo h2 {
+    font-size: 1.6rem;
+  }
+  .conone h2 {
+    font-size: 1.6rem;
+  }
+  .contwo * {
+    font-size: 1rem;
+  }
+}
